@@ -23,9 +23,9 @@ public class NetWorkChangeReceiver extends BroadcastReceiver {
         ConnectivityManager connectivityManager= (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo=connectivityManager.getActiveNetworkInfo();
         if(networkInfo!=null&&networkInfo.isAvailable()){
-            Toast.makeText(context,"当前网络可用",Toast.LENGTH_SHORT).show();
+            Toast.makeText(context,"NetWorkChangeReceiver:当前网络可用",Toast.LENGTH_SHORT).show();
         }else {
-            Toast.makeText(context,"没有网络连接，请检查网络！",Toast.LENGTH_SHORT).show();
+            Toast.makeText(context,"NetWorkChangeReceiver:没有网络连接，请检查网络！",Toast.LENGTH_SHORT).show();
         }
 //        Toast.makeText(context,"network changes",Toast.LENGTH_SHORT).show();
     }
