@@ -1,12 +1,12 @@
 package com.broadcastReceiverdemo.activity;
 
+import android.app.Activity;
 import android.content.IntentFilter;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.broadcastReceiverdemo.broadcastreceiver.NetWorkChangeReceiver;
 
-public class DynamicRegisterListenNetChange extends AppCompatActivity {
+public class DynamicRegisterListenNetChangeActivity extends Activity {
 
     private IntentFilter mIntentFilter;
     //声明广播
